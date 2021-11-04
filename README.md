@@ -29,3 +29,7 @@ II. Tailwind
 4) npx tailwindcss-cli@latest init
 5) Sửa file tailwind.config.js: purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 6) Sửa file index.css -> thêm file .env: SKIP_PREFLIGHT_CHECK = true
+
+III. HeaderComponents
+1) Navbar.js
+2) Dropdown.js
