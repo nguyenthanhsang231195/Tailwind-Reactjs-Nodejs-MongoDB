@@ -20,14 +20,14 @@ export default function Footer() {
     <div className="relative border-solid border-4 border-light-blue-500">
         <h1 className="text-center uppercase text-black text-2xl font-bold"> Hướng dẫn - Hỗ trợ </h1>
         <ul className="leading-10 justify-center items-center text-center">
-            <li className="text-2xl"> Hướng dẫn đặt hàng </li>
-            <li className="text-2xl"> Thanh toán - Giao nhận </li>
-            <li className="text-2xl"> Phương thức đổi trả </li>
-            <li className="text-2xl"> Giỏ hàng </li>
+            <li className="text-2xl truncate"> Hướng dẫn đặt hàng </li>
+            <li className="text-2xl truncate"> Thanh toán - Giao nhận </li>
+            <li className="text-2xl truncate"> Phương thức đổi trả </li>
+            <li className="text-2xl truncate"> Giỏ hàng </li>
         </ul>
     </div>
 
-    <div className="col-start-3 col-span-2">
+    <div className="col-start-3 col-span-2 border-solid border-4 border-light-blue-500">
         <div className="grid grid-rows-2">
             <div>
                 <h1 className="text-center uppercase text-black text-2xl font-bold"> Kết nối với chúng tôi: </h1>
@@ -41,7 +41,7 @@ export default function Footer() {
                 </div>  
             </div>
 
-            <div className="justify-center items-center text-center">
+            <div className="justify-center items-center text-center md:block hidden">
                 <h2 className="text-center uppercase text-black text-2xl font-bold"> Đăng ký khuyến mãi: </h2>
                 <div className="inline-flex">
                     <input 
