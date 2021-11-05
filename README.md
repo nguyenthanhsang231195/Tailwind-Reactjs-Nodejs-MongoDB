@@ -33,3 +33,7 @@ II. Tailwind
 III. HeaderComponents
 1) Navbar.js
 2) Dropdown.js
+
+IV. HomeScreen
+1) HomeScreen.js
+2) Footer.js

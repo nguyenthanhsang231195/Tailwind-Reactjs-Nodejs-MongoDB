@@ -22,7 +22,7 @@ export const Navbar = () => {
         </Link>
     </div>
 
-    <div class="relative text-gray-600 mx-4 sm:inline-flex hidden">
+    <div className="relative text-gray-600 mx-4 sm:inline-flex hidden">
         <input 
             type="search" 
             name="serch" 

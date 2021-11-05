@@ -6,8 +6,10 @@ import './App.css';
 import { Navbar } from './Components/HeaderComponents/Navbar/Navbar';
 import { Dropdown } from './Components/HeaderComponents/Navbar/Dropdown';
 
+
 // Screen
-import HomeScreen from './Screens/HomeScreen/HomeScreen';
+import HomeScreen from './Screens/HomeScreen';
+import Footer from './Components/FooterComponents/Footer';
 
 function App() {
     return (
@@ -24,7 +26,7 @@ function App() {
     </main>
 
     <footer className="footer-website">
-        Designed by Sang 2021
+        <Footer />
     </footer>
 </div>
 </BrowserRouter>
