@@ -6,11 +6,19 @@ import { Link } from 'react-router-dom';
 import formatCurrency from '../util';
 
 export default function HomeScreen() {
+
+    const breakPoints = [
+        { width: 1, itemsToShow: 1 },
+        { width: 768, itemsToShow: 2 },
+        { width: 992, itemsToShow: 3 },
+        { width: 1200, itemsToShow: 4 },
+    ];
+
     return (
 <div className="relative w-full m-auto bg-white text-black">
     {/* Carousel */}
     <div className="relative w-full m-auto py-2">
-        <Carousel enableAutoPlay autoPlaySpeed={5000} arrows={false}>
+        <Carousel enableAutoPlay autoPlaySpeed={5000}>
             <div className="relative w-full h-auto my-2">
                 <img src="/images/Banner-1.jpg" alt="" className="relative w-full" />
             </div>
@@ -48,12 +56,16 @@ export default function HomeScreen() {
         </div>
         <div className="relative block">
             <ul className="relative grid w-full">
-            <Carousel enableAutoPlay autoPlaySpeed={6000} itemsToShow={2}>
+            <Carousel enableAutoPlay autoPlaySpeed={6000} breakPoints={breakPoints}>
             {productData.getAllProducts().map((product) => 
                 <li key={product._id} className="relative w-96">
                     <div className="relative justify-center items-center text-center w-full">
+                    <Link to={`/product/${product.slug}`} className="text-2xl text-black font-bold">
                         <img src={product.image_main} alt={product.name} />
+                    </Link>
+                    <Link to={`/product/${product.slug}`} className="text-2xl text-black font-bold">
                         <h2 className="my-2"> {product.name} </h2>
+                    </Link>
                         <div className="flex justify-end items-center text-center">
                             <h3 className="text-xl mr-2 md:text-2xl"> {formatCurrency(product.price)} </h3>
                             <h4 className="text-red-600 line-through text-lg"> {formatCurrency(product.pricesell)} </h4>
@@ -75,8 +87,12 @@ export default function HomeScreen() {
             {productData.getProducts(10).map((product) => 
                 <li key={product._id}>
                     <div className="relative justify-center items-center text-center">
-                        <img src={product.image_main} alt={product.name} />
-                        <h2 className="my-2"> {product.name} </h2>
+                        <Link to={`/product/${product.slug}`} className="text-2xl text-black font-bold">
+                            <img src={product.image_main} alt={product.name} />
+                        </Link>
+                        <Link to={`/product/${product.slug}`} className="text-2xl text-black font-bold">
+                            <h2 className="my-2"> {product.name} </h2>
+                        </Link>
                         <div className="flex justify-end items-center text-center">
                             <h3 className="text-xl mr-2 md:text-2xl"> {formatCurrency(product.price)} </h3>
                             <h4 className="text-red-600 line-through text-lg"> {formatCurrency(product.pricesell)} </h4>

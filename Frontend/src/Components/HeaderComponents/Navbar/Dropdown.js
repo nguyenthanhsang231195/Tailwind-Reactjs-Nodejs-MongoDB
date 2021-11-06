@@ -18,11 +18,10 @@ export const Dropdown = () => {
         }
     </span>
     
-
     <div className=
         {sidebar 
-        ? 'fixed grid grid-rows-4 items-center text-center bg-black w-full h-auto left-0 duration-300' 
-        : 'fixed grid grid-rows-4 items-center text-center bg-purple-500 bg-opacity-50 w-full h-auto -left-full duration-700'}>
+        ? 'fixed grid grid-rows-4 items-center text-center bg-black w-full h-auto left-0 duration-300 z-10' 
+        : 'fixed grid grid-rows-4 items-center text-center bg-purple-500 bg-opacity-50 w-full h-auto -left-full duration-700 z-10'}>
         <Link to="/">
             <h2 className="text-2xl font-bold text-white my-2 uppercase"> Trang chủ </h2> 
          </Link>

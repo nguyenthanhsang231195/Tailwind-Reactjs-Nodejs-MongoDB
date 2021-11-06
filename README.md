@@ -37,3 +37,8 @@ III. HeaderComponents
 IV. HomeScreen
 1) HomeScreen.js
 2) Footer.js
+
+V. CategoryScreen - ProductScreen(I)
+1) CategoryScreen.js
+2) ProductScreen.js
+3) Fix HomeScreen.js, Dropdown.js
