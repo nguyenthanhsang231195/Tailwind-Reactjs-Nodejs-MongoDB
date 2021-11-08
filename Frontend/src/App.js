@@ -11,6 +11,7 @@ import Footer from './Components/FooterComponents/Footer';
 import HomeScreen from './Screens/HomeScreen';
 import CategoryScreen from './Screens/CategoryScreen';
 import ProductScreen from './Screens/ProductScreen';
+import CartScreen from './Screens/CartScreen';
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
         {/* Screen */}
         <Route path="/category" component={CategoryScreen} exact />
         <Route path="/product/:slug" component={ProductScreen} />
+        <Route path="/cart" component={CartScreen} />
     </main>
 
     <footer className="footer-website">

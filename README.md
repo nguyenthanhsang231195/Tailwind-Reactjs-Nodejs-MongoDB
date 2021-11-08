@@ -42,3 +42,5 @@ V. CategoryScreen - ProductScreen(I)
 1) CategoryScreen.js
 2) ProductScreen.js
 3) Fix HomeScreen.js, Dropdown.js
+
+V. CartScreen(I)

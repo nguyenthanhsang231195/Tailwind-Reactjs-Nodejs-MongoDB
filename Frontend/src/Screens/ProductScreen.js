@@ -52,7 +52,7 @@ function ProductScreen(props) {
                     </select>
                </div>
                <div className="relative w-full m-auto text-center">
-                    <button class="relative w-80 h-20 ring-2 ring-purple-800 ring-offset-1 bg-black text-white"> Click </button>
+                    <button className="relative w-80 h-20 ring-2 ring-purple-800 ring-offset-1 bg-black text-white"> Click </button>
                </div>
             </div>
         </div>
