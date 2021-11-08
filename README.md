@@ -44,3 +44,11 @@ V. CategoryScreen - ProductScreen(I)
 3) Fix HomeScreen.js, Dropdown.js
 
 V. CartScreen(I)
+
+VI. Backend - REST API
+1) cd Backend -> npm init
+2) npm install express
+3) npm install moongoose
+4) npm install dotenv
+5) npm install nodemon
+6) Thêm vào: "start": "nodemon Backend/index.js"(Tự cập nhật bên Backend)
