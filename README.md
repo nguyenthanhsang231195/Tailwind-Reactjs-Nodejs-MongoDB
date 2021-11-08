@@ -45,10 +45,15 @@ V. CategoryScreen - ProductScreen(I)
 
 V. CartScreen(I)
 
-VI. Backend - REST API
+VI. Backend - REST API (I)
 1) cd Backend -> npm init
 2) npm install express
 3) npm install moongoose
 4) npm install dotenv
 5) npm install nodemon
 6) Thêm vào: "start": "nodemon Backend/index.js"(Tự cập nhật bên Backend)
+
+VII. MongoDB
+1) Tạo Database Access
+2) IP Network Access
+3) Giấu file liên kết .env
